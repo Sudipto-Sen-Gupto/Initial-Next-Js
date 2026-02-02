@@ -1,11 +1,14 @@
 
+import Banner from '@/component/Banner';
 import React from 'react';
 
 const page = () => {
+     
+       
+
   return (
     <div>
-      
-      hellow world
+      <Banner></Banner>
     </div>
   );
 };
