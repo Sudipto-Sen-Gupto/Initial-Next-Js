@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 const StoryCard = ({story}) => {
@@ -45,14 +46,14 @@ const StoryCard = ({story}) => {
   ))}
 </div>
 
-<button
-  className="mt-7 w-full py-2.5 rounded-full text-white font-semibold tracking-wide
-  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
-  hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500
+<div className="mt-10 mx-50">
+  <Link href={`/story/${story.id}`}
+  className=" rounded-full font-semibold  bg-black text-cyan-400  p-4
   shadow-md hover:shadow-lg transition-all duration-300"
 >
   View Details
-</button>
+</Link>
+</div>
 
           </div>
        
