@@ -5,7 +5,7 @@ const page = async({params}) => {
     // const {technology,topic,page_no,subject}=await params
         
         const {slug}=await params;
-        const [technology,topic, ,page_no,subject]=slug;
+        const [technology,topic, ,page_no,subject]=slug || [];
         console.log(slug);
     return (
         <div>
